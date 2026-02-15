@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 from time import time
 from typing import List
@@ -18,7 +19,8 @@ class OpenAIModels(ModelProvider):
         self.client = self.create_client()
 
     def create_client(self) -> OpenAI:
-        return OpenAI(api_key=self._api_key())
+        base_url = os.getenv("OPENAI_BASE_URL")
+        return OpenAI(api_key=self._api_key(), base_url=base_url)
 
     def request(
         self,
