@@ -61,3 +61,4 @@ RUN chmod +x /bountytasks/requirements.sh
 RUN /bountytasks/requirements.sh
 RUN /venv/bin/pip install --upgrade pip
 RUN /venv/bin/pip install wheel && /venv/bin/pip install -r /bountytasks/requirements.txt
+RUN /venv/bin/pip install semgrep tree-sitter tree-sitter-python tree-sitter-javascript tree-sitter-go tree-sitter-c tree-sitter-cpp

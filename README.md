@@ -102,6 +102,7 @@ HELM_API_KEY={HELM_API_KEY}
 OPENAI_API_KEY={OPENAI_API_KEY}
 TOGETHER_API_KEY={TOGETHER_API_KEY}
 XAI_API_KEY={XAI_API_KEY}
+OPENAI_BASE_URL={OPENAI_BASE_URL}
 ```
 
 Replace {KEY_NAME} with your actual API key values (make sure you don't include {} when adding the key, e.g. KEY=sk-proj...). You only need to fill in whichever keys you will use.
